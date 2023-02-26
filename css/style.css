@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 36px;
+}
+
+button {
+	font-family: 'Nunito', sans-serif;
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	transform: translateX(-50%);
+	padding: 10px 30px;
+	color: #fff;
+	font-weight: 600;
+	border: solid white 3px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.btn-zoom {
+	left: 25%;
+}
+
+.btn-zoom:hover ~ .squere {
+	height: 200px;
+	width: 200px;
+}
+
+.btn-move {
+	left: 50%;
+}
+
+.btn-move:hover ~ .squere {
+	top: 200px;
+}
+.btn-color {
+	left: 75%;
+}
+
+.btn-color:hover ~ .squere {
+	background-color: #000;
+	border: 2px solid #fff;
+	box-shadow: 0 0 15px black;
+}
+
+/*
+color: ma zmienić kolor kwadratów i cienia na czarny, obramowanie białe. */
+
+button:hover {
+	background-color: #fff;
+	color: #000;
+	transition: 0.3s;
+}
+
+.squere {
+	position: absolute;
+	top: 150px;
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	transform: translateX(-50%);
+	border: 2px solid;
+	transition: 0.5s;
+}
+
+.red {
+	left: 25%;
+	background-color: red;
+	border: red;
+	box-shadow: 0 0 15px darkred;
+}
+
+.blue {
+	left: 50%;
+	background-color: blue;
+	border: blue;
+	box-shadow: 0 0 15px darkblue;
+}
+
+.green {
+	left: 75%;
+	background-color: green;
+	border: green;
+	box-shadow: 0 0 15px darkgreen;
+}
